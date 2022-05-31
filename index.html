@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    
+    <title>learnjavascript</title>
+</head>
+<body>
+    
+    
+    <section class="layout">
+        <div class="sidebar">
+            <h1>Menu</h1>
+            <ul>
+                
+            </ul>
+    
+            
+
+        </div>
+
+        <div class="body" id="divbody">
+            
+            
+            <div class="fullCard" id="thumbnail">
+                <h1 id="box-shadow"></h1>
+                <div class="cardContent">
+                  <label for="">Contar caracteres</label>
+                  <input id="contarstring" type="text" onkeyup="getCharCount(this.value)">
+                  <p>El numero de caracteres es <b><span  id="numcaracteres">0</span></b></p>
+                  <p>El texto en mayuscula: <b><span id="mayuscula"></span></b></p>
+                  <p>El texto en minuscula: <b><span id="minuscula"></span></b></p>
+                  <p>El primer caracter: <b><span id="primercaracter"></span></b></p>
+                  <p>El ultimo caracter: <b><span id="ultimocaracter"></span></b></p>
+                </div>
+            </div>
+
+            <div class="fullCard" id="thumbnail">
+              <br>
+              <button onclick="insertarfila()">Agregar fila a la tabla</button><br>
+              <br>
+              <table id="tablafila" border="1">
+                <tr>
+                  <td>ejemplo fila columna 1</td>
+                  <td>ejemplo fila columna 2</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="fullCard" id="thumbnail">
+              <label for="">Par o impar?</label>
+              <br>
+              <input type="number" id="" onkeyup="paroimpar(this.value)"><br>
+              <br>
+              <p>El numero es <b><span id="paroimpar"></span></b></p>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
